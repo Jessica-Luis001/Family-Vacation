@@ -1,0 +1,66 @@
+start = '''
+Your family has been stressed out these past few months and you are stressed out with them. You decide to take a vacation with your family.
+To start your vacation, you must choose a destination.
+'''
+#EndGame
+endgame = "Game Over."
+print(start)
+
+
+print("Type 'forest', 'beach', or 'town'.")
+user_input = input()
+#Forest
+if user_input == "forest":
+    print("You chose to hike through a forest with your family.")
+    print("You come across a lake, but you also see a mountain in the distance.")
+    answer2 = input("Type 'lake' or 'mountain' to continue.")
+    #Lake
+    if answer2 == "lake":
+        print("Your family wants to swim deeper into the lake. Do you stay on the shoreline or venture deeper?")
+        answer3 = input("Type'shoreline' or 'venture deeper' to continue.")
+        #Shoreline
+        if answer3 == "shoreline":
+            print("Mermaids emerge from the lake and greet you on the shoreline.")
+            print("It's getting late. The mermaids invited you to stay after dark. What will you do?")
+            print("Type 'stay after dark' or 'leave now'.")
+            #stay after dark
+            if user_input == "stay after dark":
+                print("Your family turn into fish and flop about on the shoreline.")
+                print("You die gasping for oxygen. Nice.")
+                print(endgame)
+            #leave now
+            elif user_input == "leave now":
+                print("The mermaids cast a spell on you as you leave.")
+                print("As you drive home, your family crashes into a car on the other lane.")
+                print(endgame)
+        #Venture Deeper
+    elif answer3 == "venture deeper":
+            print("Your family ventures deeper into the lake and sees a shadowy figure emerging from beneath you.")
+            print("It's Nessy! The Loch Ness Monster!")
+            print("In reflex, you splash water at Nessy hoping it would distract Nessy long enough for your family to escape.")
+            print("Your attempts at distraction angered Nessy and in response, it whiplashed its tail and your family flies through the air and hits a tree.")
+            print(endgame)
+    #Mountain
+        elif answer2 == "mountain":
+        print("You decide to walk towards the mountain, catching the scenery on the way there.")
+        print("Along the way, you discover a mystical cave. Would you like to venture into the cave?")
+        print("Type 'yes' or 'no'.")
+        if user_input == "yes":
+            print("You encounter trolls dancing around the fire. On closer inspection, you realize there is a human boy turning on a spit.")
+            print("Do you save the boy or trade places with him?")
+            print("Type 'save the boy' or 'trade places'.")
+            if user_input == "save the boy":
+                print("Type 'negotiate' or 'fight'.")
+                if user_input == "negotiate":
+                    print("You call attention to yourself but the trolls don't understand you.")
+                    print("The only option is to fight the trolls. You end up losing the fight.")
+
+
+
+#Beach
+elif user_input == "beach":
+    print("You chose to drive to the prettiest beach.")
+
+#Town
+elif user_input == "town":
+    print("You chose to drive to town in the next state over.")
